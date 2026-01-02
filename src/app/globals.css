@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-playfair: 'Playfair Display', serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-navy-500;
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-gold-300 text-white px-8 py-3 rounded-lg font-semibold text-button;
+    @apply hover:bg-gold-400 hover:shadow-button;
+    @apply focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2;
+    @apply active:scale-[0.97] transition-all duration-150;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gold-300;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-teal-500 text-teal-500 px-8 py-3 rounded-lg font-semibold text-button;
+    @apply hover:bg-teal-500 hover:text-white;
+    @apply focus:outline-none focus:ring-2 focus:ring-navy-500 focus:ring-offset-2;
+    @apply active:scale-[0.97] transition-all duration-150;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border-2 border-gold-300 text-gold-300 px-8 py-3 rounded-lg font-semibold text-button;
+    @apply hover:bg-gold-300 hover:text-white;
+    @apply focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2;
+    @apply active:scale-[0.97] transition-all duration-150;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-white p-6 rounded-xl border border-gray-200 shadow-card;
+    @apply hover:shadow-card-hover hover:-translate-y-1;
+    @apply transition-all duration-250;
+  }
+
+  /* Form Input Styles */
+  .input {
+    @apply w-full h-12 px-4 py-3 border border-gray-300 rounded-lg;
+    @apply focus:outline-none focus:ring-3 focus:ring-teal-500 focus:border-teal-500;
+    @apply disabled:bg-gray-100 disabled:cursor-not-allowed;
+    @apply transition-all duration-200;
+  }
+
+  .input-error {
+    @apply border-error-500 focus:ring-error-500 focus:border-error-500 animate-shake;
+  }
+
+  /* Typography */
+  .heading-hero {
+    @apply font-serif font-bold text-hero-desktop md:text-hero-mobile;
+    @apply text-navy-500 leading-tight;
+  }
+
+  .heading-h2 {
+    @apply font-serif font-bold text-h2-desktop md:text-h2-mobile;
+    @apply text-navy-500 leading-tight;
+  }
+
+  .heading-h3 {
+    @apply font-serif font-semibold text-h3-desktop md:text-h3-mobile;
+    @apply text-navy-500;
+  }
+
+  .heading-h4 {
+    @apply font-serif font-semibold text-h4-desktop md:text-h4-mobile;
+    @apply text-navy-500;
+  }
+
+  .body-large {
+    @apply text-body-large text-gray-900;
+  }
+
+  .body-default {
+    @apply text-body-default text-gray-900;
+  }
+
+  .body-small {
+    @apply text-body-small text-gray-600;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-5 md:px-10 lg:px-16;
+  }
+
+  /* Section Spacing */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+}
+
+@layer utilities {
+  /* Shimmer animation for loading states */
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      #f0f0f0 25%,
+      #e0e0e0 50%,
+      #f0f0f0 75%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  /* Screen reader only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Focus visible for keyboard navigation */
+  .focus-visible-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2;
+  }
+}
+

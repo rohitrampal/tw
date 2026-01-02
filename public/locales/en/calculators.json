@@ -1,0 +1,35 @@
+{
+  "operationalHealth": {
+    "title": "Operational Health Diagnostic",
+    "description": "Assess your operational maturity across 5 G2P indices"
+  },
+  "costLeakage": {
+    "title": "Cost Leakage Estimator",
+    "description": "Quantify revenue lost to operational inefficiency in minutes"
+  },
+  "breakeven": {
+    "title": "Break-Even Point Calculator",
+    "description": "Calculate when your investments will pay off"
+  },
+  "scaleReadiness": {
+    "title": "Scale Readiness Analyzer",
+    "description": "Assess if your business is ready for 2–3x growth"
+  },
+  "burnoutRisk": {
+    "title": "Team Burnout Risk Finder",
+    "description": "Spot burnout triggers before they impact performance"
+  },
+  "bottleneckFinder": {
+    "title": "Decision Bottleneck Finder",
+    "description": "Pinpoint approval delays and process slowdowns"
+  },
+  "roi": {
+    "title": "ROI Calculator",
+    "description": "Project returns from operational investments"
+  },
+  "governanceMaturity": {
+    "title": "Governance Maturity Calculator",
+    "description": "Full governance health across 5 dimensions"
+  }
+}
+
