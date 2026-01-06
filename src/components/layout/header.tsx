@@ -64,8 +64,8 @@ export function Header() {
           className="flex items-center space-x-2 focus-visible-ring rounded-lg p-2"
           aria-label="TwelfthKey Consulting Home"
         >
-          <div className="w-12 h-12 bg-navy-500 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-xl">TK</span>
+          <div className="w-10 h-10 lg:w-12 lg:h-12 bg-navy-500 rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-lg lg:text-xl">TK</span>
           </div>
           {/* <span className="font-serif font-bold text-xl text-navy-500 hidden sm:block">
             TwelfthKey
@@ -92,7 +92,7 @@ export function Header() {
           <Button
             variant="secondary"
             asChild
-            className="text-sm px-4 py-2 whitespace-nowrap"
+            className="text-sm px-4 py-2 whitespace-nowrap bg-teal-500 text-white hover:bg-teal-600 border-0"
           >
             <Link href="/consulting/booking" suppressHydrationWarning>{t('common:bookDiscoveryCall')}</Link>
           </Button>
@@ -180,7 +180,7 @@ export function Header() {
                   <Button
                     variant="secondary"
                     asChild
-                    className="w-full"
+                    className="w-full bg-teal-500 text-white hover:bg-teal-600 border-0"
                   >
                     <Link href="/consulting/booking" suppressHydrationWarning>{t('common:bookDiscoveryCall')}</Link>
                   </Button>

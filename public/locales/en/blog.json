@@ -1,0 +1,26 @@
+{
+  "title": "Blog",
+  "subtitle": "Insights, case studies, and best practices on operational excellence and governance.",
+  "posts": {
+    "post1": {
+      "title": "5 Signs Your Business Needs Operational Excellence",
+      "excerpt": "Learn to identify the key indicators that your operations need improvement and how to address them.",
+      "category": "Operations"
+    },
+    "post2": {
+      "title": "The Complete Guide to Governance Maturity",
+      "excerpt": "Understanding the G2P Framework indices and how they measure your organization's governance health.",
+      "category": "Governance"
+    },
+    "post3": {
+      "title": "Fractional CBO vs Full-Time COO: Making the Right Choice",
+      "excerpt": "A detailed comparison to help you decide which leadership model fits your business stage and budget.",
+      "category": "Leadership"
+    }
+  },
+  "readMore": "Read More",
+  "stayUpdatedTitle": "Stay Updated",
+  "stayUpdatedDescription": "Subscribe to our newsletter for the latest insights on operational excellence.",
+  "subscribe": "Subscribe"
+}
+

@@ -1,0 +1,31 @@
+{
+  "title": "Templates",
+  "subtitle": "Ready-to-use templates for SOPs, dashboards, and governance frameworks.",
+  "categories": {
+    "sop": {
+      "title": "SOP Templates",
+      "count": "12 templates",
+      "description": "Standard Operating Procedure templates for common business processes."
+    },
+    "dashboard": {
+      "title": "Dashboard Templates",
+      "count": "8 templates",
+      "description": "KPI dashboard designs for different business functions."
+    },
+    "governance": {
+      "title": "Governance Frameworks",
+      "count": "6 templates",
+      "description": "Templates for governance policies and decision frameworks."
+    },
+    "process": {
+      "title": "Process Maps",
+      "count": "10 templates",
+      "description": "Value stream mapping and process flow templates."
+    }
+  },
+  "browse": "Browse",
+  "customTitle": "Can't Find What You Need?",
+  "customDescription": "Request custom templates tailored to your specific requirements.",
+  "requestCustom": "Request Custom Template"
+}
+

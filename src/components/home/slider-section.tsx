@@ -36,21 +36,23 @@ export function SliderSection() {
   };
 
   return (
-    <section className="bg-navy-500 text-white py-4 pt-24 text-center">
-      <div className="container-custom">
+    <section className="bg-navy-500 text-white py-4 pt-24 text-center min-h-[400px] md:min-h-[450px] lg:min-h-[500px] flex items-center">
+      <div className="container-custom w-full">
         <div className="relative max-w-4xl mx-auto">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentIndex}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.5 }}
-              className="text-center"
-            >
-              <p className="body-large text-white">{slides[currentIndex]}</p>
-            </motion.div>
-          </AnimatePresence>
+          <div className="min-h-[300px] md:min-h-[350px] lg:min-h-[400px] flex items-center justify-center">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.5 }}
+                className="text-center w-full"
+              >
+                <h1 className="text-balance text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in">{slides[currentIndex]}</h1>
+              </motion.div>
+            </AnimatePresence>
+          </div>
 
           {/* Navigation */}
           <div className="flex items-center justify-center gap-4 mt-4">

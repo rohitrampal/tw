@@ -1,0 +1,30 @@
+{
+  "title": "Our Values",
+  "subtitle": "Our core principles guide everything we do—transparency, measurable impact, and client-first approach.",
+  "drivesTitle": "What Drives Us",
+  "drivesDescription": "At TwelfthKey, our values aren't just words on a wall—they're the foundation of how we work with every client, on every engagement.",
+  "values": {
+    "value1": {
+      "title": "Measurable Impact",
+      "description": "We believe in quantifiable results. Every engagement is designed to deliver measurable improvements in governance maturity, cost savings, and operational efficiency."
+    },
+    "value2": {
+      "title": "Transparency",
+      "description": "Clear communication, honest assessments, and transparent processes. No hidden agendas, no surprises—just straightforward guidance."
+    },
+    "value3": {
+      "title": "Client-First Approach",
+      "description": "Your success is our success. We tailor every solution to your specific needs, industry, and business stage."
+    },
+    "value4": {
+      "title": "Continuous Learning",
+      "description": "We stay at the forefront of operational excellence through research, case studies, and continuous improvement of our methodologies."
+    }
+  },
+  "commitmentTitle": "Our Commitment",
+  "commitmentQuote": "\"What gets measured gets managed. What gets managed gets governed.\"",
+  "commitmentDescription": "This proprietary principle guides our approach. We help you measure what matters, manage it effectively, and govern it sustainably. Every engagement is designed to create lasting, measurable change.",
+  "experienceTitle": "Experience Our Values in Action",
+  "experienceDescription": "Book a discovery call to see how our values translate into results for your business."
+}
+

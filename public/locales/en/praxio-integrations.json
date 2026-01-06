@@ -1,0 +1,59 @@
+{
+  "title": "PraXio™ Integrations",
+  "subtitle": "Connect PraXio™ with your existing tools and systems. Seamless data flow, automated sync, and unified governance—all in one platform.",
+  "whyTitle": "Why Integrate?",
+  "whyDescription": "PraXio™ integrates with 20+ popular business tools to give you a unified view of your operations. No more switching between platforms or manual data entry.",
+  "benefits": {
+    "benefit1": {
+      "title": "Real-Time Sync",
+      "description": "Data updates automatically every 5-60 seconds depending on importance."
+    },
+    "benefit2": {
+      "title": "No Manual Entry",
+      "description": "Eliminate duplicate data entry and reduce errors by 90%."
+    },
+    "benefit3": {
+      "title": "Unified Dashboard",
+      "description": "See all your metrics in one place—finance, HR, operations, sales."
+    }
+  },
+  "availableTitle": "Available Integrations",
+  "integrations": {
+    "integration1": {
+      "name": "HRMS Systems",
+      "description": "Connect with BambooHR, Guidepoint, and other HR management systems for real-time team data.",
+      "status": "Available"
+    },
+    "integration2": {
+      "name": "Finance & Accounting",
+      "description": "Integrate with QuickBooks, Xero, Chargebee, and other financial platforms for automated reporting.",
+      "status": "Available"
+    },
+    "integration3": {
+      "name": "CRM Platforms",
+      "description": "Sync with HubSpot, Salesforce, Zoho CRM to track sales pipeline and customer metrics.",
+      "status": "Available"
+    },
+    "integration4": {
+      "name": "Project Management",
+      "description": "Connect Jira, Asana, Monday.com to track project progress and team productivity.",
+      "status": "Available"
+    },
+    "integration5": {
+      "name": "Communication Tools",
+      "description": "Integrate Slack, Microsoft Teams for automated notifications and alerts.",
+      "status": "Available"
+    },
+    "integration6": {
+      "name": "Data Sources",
+      "description": "Import from Google Sheets, Microsoft Excel, and CSV files for custom data analysis.",
+      "status": "Available"
+    }
+  },
+  "customTitle": "Custom Integrations",
+  "customDescription": "Don't see your tool listed? We can build custom integrations for your specific needs. Contact us to discuss your requirements.",
+  "requestCustom": "Request Custom Integration",
+  "readyTitle": "Ready to Connect Your Tools?",
+  "readyDescription": "See how PraXio™ integrates with your existing systems in a live demo."
+}
+

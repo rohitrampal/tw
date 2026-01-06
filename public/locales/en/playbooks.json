@@ -1,0 +1,35 @@
+{
+  "title": "Playbooks",
+  "subtitle": "Step-by-step guides and templates for implementing operational improvements.",
+  "playbooks": {
+    "playbook1": {
+      "title": "Operational Excellence Implementation Playbook",
+      "description": "Step-by-step guide to implementing operational improvements using the G2P Framework.",
+      "pages": "45 pages",
+      "format": "PDF"
+    },
+    "playbook2": {
+      "title": "Governance Maturity Assessment Guide",
+      "description": "Complete methodology for assessing and improving your governance maturity scores.",
+      "pages": "32 pages",
+      "format": "PDF"
+    },
+    "playbook3": {
+      "title": "SOP Creation Template & Best Practices",
+      "description": "Templates and guidelines for creating effective Standard Operating Procedures.",
+      "pages": "28 pages",
+      "format": "PDF"
+    },
+    "playbook4": {
+      "title": "Dashboard Design Playbook",
+      "description": "How to design and implement effective KPI dashboards for your organization.",
+      "pages": "38 pages",
+      "format": "PDF"
+    }
+  },
+  "download": "Download Playbook",
+  "customTitle": "Need Custom Playbooks?",
+  "customDescription": "Our team can create tailored playbooks for your specific industry and challenges.",
+  "requestCustom": "Request Custom Playbook"
+}
+

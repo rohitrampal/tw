@@ -53,7 +53,7 @@ const initI18n = () => {
 
         // Namespace configuration
         defaultNS: 'common',
-        ns: ['common', 'hero', 'footer', 'trustBadges', 'exitIntent', 'calculators', 'navigation'],
+        ns: ['common', 'hero', 'footer', 'trustBadges', 'exitIntent', 'calculators', 'navigation', 'resources', 'blog', 'playbooks', 'templates', 'webinars', 'roi-guide', 'about', 'about-team', 'about-values', 'about-careers', 'praxio-integrations'],
         
         react: {
           useSuspense: false, // Disable suspense for SSR compatibility

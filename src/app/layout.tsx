@@ -8,6 +8,7 @@ import { SkipToContent } from '@/components/accessibility/skip-to-content';
 import { NetworkBanner } from '@/components/error-handling/network-banner';
 import { ExitIntentWrapper } from '@/components/layout/exit-intent-wrapper';
 import { ClientLangWrapper } from '@/components/layout/client-lang-wrapper';
+import { MobileStickyCTA } from '@/components/layout/mobile-sticky-cta';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -111,6 +112,7 @@ export default function RootLayout({
               <Header />
               <main id="main-content">{children}</main>
               <Footer />
+              <MobileStickyCTA />
             </ExitIntentWrapper>
           </ClientLangWrapper>
         </Providers>

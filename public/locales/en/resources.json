@@ -1,0 +1,28 @@
+{
+  "title": "Resource Hub",
+  "subtitle": "Access free tools, guides, templates, and insights to accelerate your operational excellence journey.",
+  "blog": {
+    "title": "Blog",
+    "description": "Insights, case studies, and best practices on operational excellence and governance."
+  },
+  "playbooks": {
+    "title": "Playbooks",
+    "description": "Step-by-step guides and templates for implementing operational improvements."
+  },
+  "templates": {
+    "title": "Templates",
+    "description": "Ready-to-use templates for SOPs, dashboards, and governance frameworks."
+  },
+  "webinars": {
+    "title": "Webinars",
+    "description": "Recorded sessions and live webinars on operational excellence topics."
+  },
+  "roiGuide": {
+    "title": "ROI Guide",
+    "description": "Comprehensive guide to calculating and maximizing ROI from operational investments."
+  },
+  "explore": "Explore",
+  "needGuidanceTitle": "Need Personalized Guidance?",
+  "needGuidanceDescription": "Book a discovery call to discuss your specific operational challenges."
+}
+

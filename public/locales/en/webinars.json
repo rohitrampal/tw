@@ -1,0 +1,30 @@
+{
+  "title": "Webinars",
+  "subtitle": "Recorded sessions and live webinars on operational excellence topics.",
+  "webinars": {
+    "webinar1": {
+      "title": "Introduction to G2P Framework",
+      "description": "Learn the fundamentals of the Governance-to-Performance framework and how it can transform your operations.",
+      "duration": "45 min",
+      "type": "Upcoming"
+    },
+    "webinar2": {
+      "title": "Operational Excellence for Startups",
+      "description": "Practical strategies for implementing operational improvements in early-stage companies.",
+      "duration": "60 min",
+      "type": "Recorded"
+    },
+    "webinar3": {
+      "title": "Building Governance Maturity",
+      "description": "Deep dive into the 5 G2P indices and how to improve each one systematically.",
+      "duration": "50 min",
+      "type": "Recorded"
+    }
+  },
+  "register": "Register",
+  "watchRecording": "Watch Recording",
+  "customTitle": "Request a Custom Webinar",
+  "customDescription": "Need a webinar on a specific topic? Let us know and we'll schedule one for your team.",
+  "requestWebinar": "Request Webinar"
+}
+

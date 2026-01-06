@@ -1,0 +1,27 @@
+{
+  "title": "Our Team",
+  "subtitle": "Meet the experts behind TwelfthKey—experienced consultants, researchers, and operational excellence practitioners.",
+  "whyTitle": "Why Our Team",
+  "whyDescription": "Our team combines deep academic research with real-world operational experience. We've helped dozens of companies transform their operations using proven methodologies and intelligent platforms.",
+  "members": {
+    "member1": {
+      "name": "Aditya Mayekar",
+      "role": "Founder & CEO",
+      "bio": "PhD in Operations Research with 15+ years of experience in operational excellence and governance."
+    },
+    "member2": {
+      "name": "Expert Consultant",
+      "role": "Senior Operations Consultant",
+      "bio": "Specializes in G2P Framework implementation and process excellence for MSMEs."
+    },
+    "member3": {
+      "name": "Platform Lead",
+      "role": "PraXio™ Platform Architect",
+      "bio": "Leads the development and architecture of the PraXio™ governance platform."
+    }
+  },
+  "joinTitle": "Join Our Team",
+  "joinDescription": "We're always looking for talented individuals passionate about operational excellence.",
+  "viewPositions": "View Open Positions"
+}
+
