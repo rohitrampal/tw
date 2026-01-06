@@ -13,6 +13,7 @@ export default function OperationalHealthCheckPage() {
   const [result, setResult] = useState<any>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [userInfo, setUserInfo] = useState({ email: '', name: '', companyName: '' });
+  const [showUserInfoForm, setShowUserInfoForm] = useState(true);
 
   const question = OPERATIONAL_HEALTH_QUESTIONS[currentQuestion];
   const isLastQuestion = currentQuestion === OPERATIONAL_HEALTH_QUESTIONS.length - 1;
@@ -56,6 +57,8 @@ export default function OperationalHealthCheckPage() {
 
       const data = await response.json();
       if (data.success) {
+        // Hide the form after successful submission
+        setShowUserInfoForm(false);
         // Show success message or redirect
         alert(t('tools-health-check:resultsSaved'));
       }
@@ -106,7 +109,7 @@ export default function OperationalHealthCheckPage() {
               </ul>
             </div>
 
-            {!userInfo.email && (
+            {showUserInfoForm && (
               <div className="border-t pt-6">
                 <h3 className="heading-h4 mb-4">{t('tools-health-check:getDetailedReport')}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">

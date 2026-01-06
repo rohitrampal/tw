@@ -2,7 +2,7 @@
 
 import { useTranslation } from 'react-i18next';
 import { Globe } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const languages = [
@@ -11,10 +11,18 @@ const languages = [
 ];
 
 export function LanguageSwitcher() {
-  const { i18n } = useTranslation();
+  const { i18n, ready } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const currentLanguage = languages.find((lang) => lang.code === i18n.language) || languages[0];
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Default to first language if i18n is not ready
+  const currentLanguage = mounted && ready && i18n.language
+    ? languages.find((lang) => lang.code === i18n.language) || languages[0]
+    : languages[0];
 
   const changeLanguage = (langCode: string) => {
     i18n.changeLanguage(langCode);

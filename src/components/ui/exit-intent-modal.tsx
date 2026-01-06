@@ -17,7 +17,9 @@ export function ExitIntentModal({ onClose }: ExitIntentModalProps) {
   const router = useRouter();
 
   useEffect(() => {
-    trackExitIntentModalShown(window.location.pathname);
+    if (typeof window !== 'undefined') {
+      trackExitIntentModalShown(window.location.pathname);
+    }
   }, []);
 
   const handleCTAClick = (ctaText: string, href: string) => {
@@ -97,8 +99,18 @@ export function ExitIntentModal({ onClose }: ExitIntentModalProps) {
 
 export function useExitIntent() {
   const [showModal, setShowModal] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    // Only run on client side after mount
+    if (!mounted || typeof window === 'undefined' || typeof document === 'undefined') {
+      return;
+    }
+
     let hasTriggered = false;
 
     const handleMouseLeave = (e: MouseEvent) => {
@@ -117,7 +129,7 @@ export function useExitIntent() {
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, []);
+  }, [mounted]);
 
   return { showModal, setShowModal };
 }

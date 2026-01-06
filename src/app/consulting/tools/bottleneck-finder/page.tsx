@@ -19,6 +19,7 @@ export default function BottleneckFinderPage() {
   const [result, setResult] = useState<any>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [userInfo, setUserInfo] = useState({ email: '', name: '', companyName: '' });
+  const [showUserInfoForm, setShowUserInfoForm] = useState(true);
 
   const handleChange = (field: keyof BottleneckInput, value: number) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -47,6 +48,7 @@ export default function BottleneckFinderPage() {
 
       const data = await response.json();
       if (data.success) {
+        setShowUserInfoForm(false);
         alert(t('tools-bottleneck-finder:resultsSaved'));
       }
     } catch (error) {
@@ -119,7 +121,7 @@ export default function BottleneckFinderPage() {
               </ul>
             </div>
 
-            {!userInfo.email && (
+            {showUserInfoForm && (
               <div className="border-t pt-6 mb-6">
                 <h3 className="heading-h4 mb-4">{t('tools-bottleneck-finder:getDetailedReport')}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

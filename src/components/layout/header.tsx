@@ -27,6 +27,8 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
@@ -36,6 +38,8 @@ export function Header() {
   }, []);
 
   useEffect(() => {
+    if (typeof document === 'undefined') return;
+    
     // Prevent body scroll when mobile menu is open
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';

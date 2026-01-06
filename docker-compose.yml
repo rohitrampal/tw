@@ -1,19 +1,18 @@
-version: '3.8'
-
 services:
   postgres:
-    image: postgres:15-alpine
+    image: postgres:16-alpine
     container_name: twelfthkey-db
+    restart: always
     environment:
       POSTGRES_USER: twelfthkey
       POSTGRES_PASSWORD: twelfthkey_password
       POSTGRES_DB: twelfthkey
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U twelfthkey"]
+      test: ["CMD-SHELL", "pg_isready -U twelfthkey -d twelfthkey"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -23,8 +22,9 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: twelfthkey-app
+    restart: always
     environment:
-      DATABASE_URL: postgresql://twelfthkey:twelfthkey_password@postgres:5432/twelfthkey?schema=public
+      DATABASE_URL: postgresql://twelfthkey:twelfthkey_password@postgres:5432/twelfthkey
       NODE_ENV: production
     ports:
       - "3000:3000"
@@ -36,4 +36,3 @@ services:
 
 volumes:
   postgres_data:
-

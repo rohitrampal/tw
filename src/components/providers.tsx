@@ -12,6 +12,8 @@ interface ProvidersProps {
 }
 
 export function Providers({ children }: ProvidersProps) {
+  // Ensure i18n is initialized (it's already initialized in config.ts)
+  // The I18nextProvider will handle hydration properly
   return (
     <I18nextProvider i18n={i18n}>
       <ErrorBoundary>

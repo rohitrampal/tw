@@ -9,6 +9,10 @@ export function NetworkBanner() {
   const [wasOffline, setWasOffline] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') {
+      return;
+    }
+
     const handleOnline = () => {
       setIsOnline(true);
       // Keep banner visible for 2 seconds after reconnection
